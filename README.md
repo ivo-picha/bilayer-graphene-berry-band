@@ -1,1 +1,1 @@
-# bilayer-graphene-berry-band
+Julia code for part **b)** of exercise **2** of **HW06** for the _QTTI 2026_ course. Calculate band structure, Berry curvature and Chern number of bilayer graphene with and without inversion symmetry.
