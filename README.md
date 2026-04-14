@@ -1,19 +1,35 @@
-## How to Run Julia Code
+# Julia Installation Guide
 
-### 1) How to Install Julia
-To install Julia, follow these steps:
-- Visit the official Julia website at [julialang.org](https://julialang.org/downloads/).
-- Download the appropriate installer for your operating system (Windows, macOS, or Linux).
-- Follow the installation instructions provided on the website.
+## Installing Julia
+1. Download Julia from the [official website](https://julialang.org/downloads/).
+2. Follow the installation instructions for your operating system.
 
-### 2) Basic Commands to Run a Script
-Once Julia is installed, you can run a script using the following commands:
-- Open a terminal (Command Prompt on Windows, Terminal on macOS or Linux).
-- Use the `cd` command to navigate to the directory where your Julia script is located.
-- Run the script by typing `julia script_name.jl`, replacing `script_name.jl` with the name of your script.
+## Installing Required Packages
+To use the code in this repository, you need to install the following Julia packages:
 
-### 3) How to Install Packages
-To install packages in Julia, open the Julia REPL (Read-Eval-Print Loop) and follow these steps:
-- Press `]` to enter the package manager.
-- Type `add PackageName`, replacing `PackageName` with the name of the package you want to install. For example, `add Plots` to install the Plots package.
-- To exit the package manager, press `Backspace`.
+1. **Plots**
+   ```julia
+   using Pkg
+   Pkg.add("Plots")
+   ```
+
+2. **LinearAlgebra** (this package is included in Julia's standard library, so no need to install)
+
+3. **Measures**
+   ```julia
+   using Pkg
+   Pkg.add("Measures")
+   ```
+
+## Running the Code
+You can run the Julia scripts from either Visual Studio Code or the terminal:
+
+### In Visual Studio Code:
+1. Open the folder containing the Julia files.
+2. Open the desired Julia file.
+3. Click on the Run button or press `Shift + Enter` to run the code.
+
+### In Terminal:
+1. Navigate to the folder containing your Julia files using the `cd` command.
+2. Start Julia by typing `julia` and pressing `Enter`.
+3. Run your script by typing `include("your_script.jl")` (replace `your_script.jl` with your actual script name).
